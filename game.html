@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the Number - Enhanced</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Guess the Number</h1>
+      <p>Select a difficulty level:</p>
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+      <p>Pick a number between 1 and 100</p>
+      <input
+        type="number"
+        id="inp"
+        placeholder="Enter your guess"
+        min="1"
+        max="100"
+      />
+      <button id="submit">Guess!</button>
+      <button id="hintBtn">Hint</button>
+      <p id="msg"></p>
+      <div id="hearts"></div>
+      <p>Attempts: <span id="Attempt">0</span></p>
+      <p>Score: <span id="score">0</span></p>
+      <button id="resBtn" class="reset-btn">Restart</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
